@@ -1,0 +1,65 @@
+---
+title: 'About | Siamease Thai Spa'
+description: "Discover Siamease Thai Spa's story. Founded by Sally in 2013, bringing traditional Thai healing wisdom to Manchester's wellness community since day one."
+permalink: 'aboutus/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner-1.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--            Featured Service 1                -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/owner.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="business owner" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">The Story Behind Siamease Thai Spa</h2>
+            <p class="cs-text">
+                Sally's journey to Manchester began in 2002 when she moved from the beautiful coastal province of Trad in eastern Thailand as a single mother seeking new opportunities. Back home, she had built a successful career as both a kindergarten teacher and beauty salon owner, running her own establishment for five years. This experience in the wellness industry planted the seeds for what would eventually become Siamease Thai Spa.
+            </p>
+            <p class="cs-text">
+                After settling into life in the UK and initially working as a hairdresser, Sally discovered her true calling lay in the ancient art of Thai massage. Following over two years of building her new life in Manchester, she dedicated herself to studying traditional Thai massage techniques, combining her natural caring instincts with the healing wisdom passed down through generations in her homeland.
+            </p>
+             <p class="cs-text">
+                In 2013, Sally's vision became reality with the opening of Siamease Thai Spa in Manchester's vibrant Chinatown. The name itself tells a story - "Siam" represents Sally's Thai nickname and heritage, whilst "ease" embodies the relaxation and peace she brings to every client. Today, Sally's dream extends beyond massage therapy; she envisions Siamease growing into a comprehensive wellness centre that could potentially partner with healthcare professionals to offer therapeutic treatments that complement traditional medical care.
+            </p>
+            <div id="quote-827">
+                <span class="cs-quote-text">
+                    Sharing the gift of Thai massage therapy has been my greatest joy in Manchester.
+                </span>
+                <span class="cs-name">Sally</span>
+                <span class="cs-job">Owner</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote-white.svg" alt="quote icon" width="136" height="77">
+            </div>                        
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
