@@ -1,0 +1,382 @@
+---
+title: 'Waxing | Huahin Moon Thai Massage'
+description: "Professional waxing services in Sunderland by experienced beauty therapist Moon. Full body & intimate waxing in clean, comfortable private treatment rooms."
+permalink: 'waxing/'
+eleventyNavigation:
+    key: Waxing
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/beauty.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner-1.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Full Body Packages</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Body Wax</span>
+                        <span class="cs-price">£180</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        2 Hours 30 Mins - Complete full body waxing service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Leg (Strip Wax)</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        40 Mins - Professional strip wax for full legs
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 930, height: 1018}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 930, height: 1018}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 930, height: 1018}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 1042, height: 1228}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 1042, height: 1228}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax-2.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" alt="wax" width="521" height="640" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-r-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Intimate & Brazilian Services</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brazilian (Hot Wax)</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        50 Mins - Professional Brazilian waxing service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Hollywood (Hot Wax)</span>
+                        <span class="cs-price">£40</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        50 Mins - Complete Hollywood waxing treatment
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Bikini G String (Hot Wax)</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        40 Mins - G-string line bikini wax service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">High Leg Bikini (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - High leg bikini line waxing
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Simply Bikini (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Basic bikini line wax treatment
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Martini (Hot Wax)</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        40 Mins - Targeted intimate area waxing
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 930, height: 1018}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 930, height: 1018}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 930, height: 1018}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 1042, height: 1228}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 1042, height: 1228}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax-3.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" alt="wax" width="521" height="640" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Facial Hair Removal</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Face (Hot Wax)</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        40 Mins - Complete facial hair removal service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyebrows + Top Lip (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Eyebrow shaping and lip waxing
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lip and Chin (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Upper lip and chin hair removal
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lip (Hot Wax)</span>
+                        <span class="cs-price">£10</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        15 Mins - Upper lip hair removal
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Chin (Hot Wax)</span>
+                        <span class="cs-price">£10</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        10 Mins - Chin hair removal service
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 930, height: 1018}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 930, height: 1018}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 930, height: 1018}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 1042, height: 1228}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 1042, height: 1228}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax-4.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" alt="wax" width="521" height="640" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-r-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Body Waxing</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Underarm Wax (Hot Wax)</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        15 Mins - Professional underarm waxing service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Half Legs - Top (Strip Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Upper half leg waxing
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Half Legs - Lower (Strip Wax)</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Lower half leg waxing
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Half Arm (Strip Wax)</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Half arm hair removal
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Arm (Strip Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Complete arm waxing service
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 930, height: 1018}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 930, height: 1018}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 930, height: 1018}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 1042, height: 1228}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 1042, height: 1228}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax-5.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" alt="wax" width="521" height="640" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Targeted Areas</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Bum Cheeks (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Targeted bum cheek waxing
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Tummy (Hot Wax)</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Abdominal area hair removal
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Sideburns (Hot Wax)</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Sideburn hair removal service
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Cheeks (Hot Wax)</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Facial cheek hair removal
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Nostrils Wax (Hot Wax)</span>
+                        <span class="cs-price">£10</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 Mins - Nostril hair removal treatment
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 930, height: 1018}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 930, height: 1018}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 930, height: 1018}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 1042, height: 1228}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 1042, height: 1228}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax-6.jpg" | resize({width: 1042, height: 1228}) | jpeg %}" alt="wax" width="521" height="640" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+                                
+
+{% endblock %}

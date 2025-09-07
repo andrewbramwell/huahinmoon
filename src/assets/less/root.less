@@ -1,5 +1,3 @@
-
-
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -8,14 +6,14 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #6c9549;
-        --primaryLight: #ffd675;
-        --secondary: #BF436D;
+        --primary: #932C87;
+        --primaryLight: #6c9549;
+        --secondary: #6c9549;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
-        --sectionColor: #f0f4ed;
+        --sectionColor: #f7f0f7;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -156,8 +154,8 @@
     h6 {
         margin: 0;
         color: var(--headerColor);
-        font-family: "Montserrat", Arial, sans-serif;
-        text-transform: uppercase;
+        font-family: "playfair display", Arial, sans-serif;
+        
     }
 
     p,
@@ -207,21 +205,21 @@
         src: url('/assets/fonts/cabin-v34-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 
-    /* montserrat-regular - latin */
+    /* playfair-display-regular - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Montserrat';
+        font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 400;
-        src: url('/assets/fonts/montserrat-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('/assets/fonts/playfair-display-v39-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
-    /* montserrat-600 - latin */
+    /* playfair-display-600 - latin */
     @font-face {
         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-        font-family: 'Montserrat';
+        font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 600;
-        src: url('/assets/fonts/montserrat-v30-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url('/assets/fonts/playfair-display-v39-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
     }
 }
 
@@ -1216,8 +1214,7 @@
             margin: 0;
             color: #1a1a1a;
             position: relative;
-            font-family: "Montserrat", Arial, sans-serif;
-             text-transform: uppercase;
+            font-family: "playfair display", Arial, sans-serif;
         }
 
         .cs-breadcrumbs {
@@ -1276,7 +1273,7 @@
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: #f0f4ed;
+                background: var(--sectionColor);
                 opacity: .8;
                 position: absolute;
                 display: block;
@@ -1317,7 +1314,7 @@
             &:before {
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(90deg, rgba(240, 244, 237, 0.90) 23.05%, rgba(240, 244, 237, 0.00) 80.08%);
+                background: linear-gradient(90deg, rgba(247, 240, 247, 0.90) 23.05%, rgba(247, 240, 247, 0.00) 80.08%);
                 opacity: 1;
             }
         }
@@ -1333,9 +1330,7 @@
             }
         }
     }
-}
-                                
-                                
+}               
 
 /*-- -------------------------- -->
 <---          CTA 262           -->
@@ -1397,7 +1392,7 @@
                 width: 100%;
                 height: 100%;
                 background: var(--primary);
-                opacity: 0.2;
+                opacity: 0.1;
                 position: absolute;
                 display: block;
                 top: 0;
@@ -1485,333 +1480,268 @@
 }                          
 
 /*-- -------------------------- -->
-<---        Footer 710          -->
+<---         Footer 842         -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cs-footer-710 {
+    #cs-footer-842 {
         padding: var(--sectionPadding);
-        padding-bottom: (50/16rem);
+        /* 30px - 50px */
+        padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
         background-color: #1a1a1a;
         position: relative;
-        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-image: url('/assets/svgs/pattern-t.svg');
+            background-repeat: repeat-x;
+            background-size: auto 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .cs-wave {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0;
+            bottom: 99%;
+        }
 
         .cs-container {
             width: 100%;
-            max-width: (1280/16rem);
+            /* reset on tablet */
+            max-width: (550/16rem);
             margin: auto;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .cs-logo-wrapper {
-            width: 100%;
-        }
-
-        .cs-logo {
-            width: 100%;
-            max-width: (210/16rem);
-            height: auto;
-            margin-right: auto;
-            display: block;
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .cs-top {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: flex-start;
-            /* 64px - 100px */
-            column-gap: clamp(4rem, 9vw, 6.25rem);
+            align-items: flex-start;
+            flex-wrap: wrap;
+            column-gap: (48/16rem);
             row-gap: (32/16rem);
         }
 
-        .cs-ul {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: (12/16rem);
-            flex: none;
-        }
-
-        .cs-contact-ul {
-            /* we remove the :before animated underline from the contact list and replace it with an underline.  The animated line doesn't work well on this section */
+        .cs-logo-group {
+            /* takes up all the space, lets the other ul's wrap below it */
             width: 100%;
-            max-width: 100%;
-            gap: (12/16rem);
-
-            .cs-link {
-                &:hover {
-                    text-decoration: underline;
-                }
-                &:before {
-                    display: none;
-                }
-            }
-        }
-
-        .cs-li {
-            list-style: none;
-            margin: 0;
-            display: block;
-        }
-
-        .cs-header {
-            font-size: (16/16rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            margin: 0 0 (24/16rem) 0;
-            color: #fff;
-            display: block;
-        }
-
-        .cs-link {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            text-decoration: none;
-            margin: 0;
-            color: #fff;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
             position: relative;
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-
-            &:before {
-                /* on hover underline */
-                content: "";
-                width: 0%;
-                height: 1px;
-                background: currentColor;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: 0;
-                left: 0;
-                transition: width 0.3s;
-            }
         }
 
-        .cs-block {
-            display: block;
-        }
-
-        .cs-icon {
-            width: (24/16rem);
+        .cs-logo {
+            width: (210/16rem);
             height: auto;
-            margin: (-1/16rem) (12/16rem) 0 0;
+            margin: 0 0 (24/16rem) 0;
+            display: block;
         }
 
-        .cs-middle {
+        .cs-logo-img {
             width: 100%;
-            /* changes at tablet */
-            max-width: (450/16rem);
-            /* 60px - 100px */
-            margin: clamp(3.75rem, 8vw, 6.25rem) 0 0 0;
-            /* 24px - 40px */
-            padding-bottom: clamp(1.25rem, 5vw, 2.5rem);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: (24/16rem);
+            height: auto;
         }
-
-        .cs-nav {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            column-gap: (40/16rem);
-            row-gap: (8/16rem);
-        }
-
-        .cs-nav-li {
-            list-style: none;
-        }
-
-        .cs-nav-link {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            text-decoration: none;
-            margin: 0;
-            color: var(--bodyTextColorWhite);
-            position: relative;
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
-
-            &:before {
-                /* on hover underline */
-                content: "";
-                width: 0%;
-                height: 1px;
-                background: currentColor;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: 0;
-                left: 0;
-                transition: width 0.3s;
-            }
-        }
-
         .cs-social {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: (8/16rem);
-        }
-
-        .cs-social-li {
-            list-style: none;
+            display: inline-flex;
+            justify-content: flex-start;
+            gap: (12/16em);
         }
 
         .cs-social-link {
             width: (32/16rem);
             height: (32/16rem);
-            background-color: transparent;
-            border: 1px solid #f6e5db;
+            background-color: #6a564d;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color 0.3s;
+            position: relative;
+            z-index: 1;
+            transition:
+                transform 0.3s,
+                background-color 0.3s;
+
             &:hover {
                 background-color: var(--secondary);
+                transform: translateY(-0.1875rem);
 
-                .cs-default {
-                    display: none;
-                }
-
-                .cs-hover {
-                    display: block;
+                .cs-social-img {
+                    filter: grayscale(1) brightness(1000%);
                 }
             }
         }
 
-        .cs-social-icon {
-            width: (12/16rem);
-            height: auto;
+        .cs-social-img {
+            height: (12/16rem);
+            width: auto;
             display: block;
         }
 
-        .cs-hover {
-            display: none;
-        }
-
-        .cs-bottom {
-            width: 100%;
-            margin: 0;
-            /* 24px - 40px, matches the cs-middle padding bottom */
-            padding: clamp(1.25rem, 5vw, 2.5rem) 0 0 0;
-            border-top: 1px solid rgba(186, 186, 186, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cs-copyright {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
+        .cs-header {
+            font-size: (20/16rem);
             line-height: 1.5em;
-            text-align: center;
-            width: 70%;
-            margin: 0;
+            font-weight: 700;
+            margin: 0 0 (20/16rem) 0;
             color: var(--bodyTextColorWhite);
             display: block;
-        }
-
-        .cs-copyright-link {
-            font-size: inherit;
-            line-height: inherit;
-            text-decoration: none;
-            margin: 0;
-            color: inherit;
-            display: inline-block;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .cs-graphic {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            /* makes it act like a background image */
-            object-fit: cover;
-            position: absolute;
-            z-index: -1;
-        }
-    }
-}
-
-/* inbetween - 600px */
-@media only screen and (min-width: 37.5rem) {
-    #cs-footer-710 {
-        .cs-top {
-            justify-content: flex-end;
+            position: relative;
         }
 
         .cs-ul {
-            width: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: (12/16rem);
         }
 
-        .cs-contact-ul {
-            width: (240/16rem);
+        .cs-ul-1 {
+            width: 100%;
+            max-width: (350/16rem);
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: (32/16rem);
+
+            .cs-li {
+                width: 44%;
+            }
+        }
+
+        .cs-li {
+            list-style: none;
+        }
+
+        .cs-link {
+            font-size: (16/16rem);
+            text-decoration: none;
+            line-height: 1.5em;
+            text-align: left;
+            color: #fff;
+            display: inline-flex;
+            align-items: flex-start;
+            gap: (8/16rem);
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--secondary);
+            }
+        }
+
+        .cs-icon {
+            width: (20/16rem);
+            height: auto;
+            margin-right: (2/16rem);
+            display: block;
+        }
+
+        .cs-bottom {
+            text-align: center;
+            width: 100%;
+            max-width: (1280/16rem);
+            /* 48px - 64px */
+            margin: clamp(3rem, 7vw, 4rem) auto 0;
+            padding-top: (24/16rem);
+            border-top: 1px solid #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: (12/16rem);
+        }
+
+        .cs-credit,
+        .cs-bottom-link,
+        .cs-credit-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            width: auto;
+            margin: 0;
+            color: #fff;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .cs-credit {
+            width: 100%;
+        }
+
+        .cs-credit-link {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            width: auto;
+            margin: 0;
+            color: #fff;
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+                color: var(--secondary);
+            }
+        }
+
+        .cs-bottom-links {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #cs-footer-710 {
-        .cs-top {
+    #cs-footer-842 {
+        .cs-container {
+            max-width: (1280/16rem);
+            /* 48px - 64px */
+            row-gap: clamp(3rem, 7vw, 4rem);
+        }
+
+        .cs-bottom {
+            justify-content: space-between;
             flex-wrap: nowrap;
         }
 
-        .cs-logo-wrapper {
-            width: auto;
-            margin-right: auto;
-        }
-
-        .cs-middle {
-            max-width: 100%;
+        .cs-credit {
+            text-align: left;
         }
     }
 }
 
-/* Small Desktop 1024px */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cs-footer-710 {
-        .cs-middle {
+    #cs-footer-842 {
+        .cs-container {
+            /* pushes all flex children to the top */
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+        }
+
+        .cs-logo-group {
+            width: 30%;
+            max-width: (400/16rem);
+            /* pushes everything to the right of it as far as possible in a flexbox */
+            margin-right: auto;
+        }
+
+        .cs-text {
+            width: 100%;
+        }
+
+        .cs-social {
             flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+            position: relative;
+            top: auto;
+            right: auto;
         }
     }
 }

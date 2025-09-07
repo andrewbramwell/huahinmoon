@@ -621,7 +621,7 @@
 @media only screen and (min-width: 0rem) {
   #reviews-567 {
     padding: var(--sectionPadding);
-    padding-top: 0;
+    background-color: var(--sectionColor);
   }
   #reviews-567 .cs-container {
     width: 100%;
@@ -662,7 +662,7 @@
     /* 32px - 60px top & bottom */
     /* 16px - 48px left & right */
     padding: clamp(2rem, 6.15vw, 3.75rem) clamp(1rem, 4.15vw, 3rem);
-    background-color: var(--sectionColor);
+    background-color: #fff;
     border-radius: 1em;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
@@ -764,6 +764,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-567 {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
   body.dark-mode #reviews-567 .cs-topper {
     color: var(--secondary);
   }

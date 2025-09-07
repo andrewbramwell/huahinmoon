@@ -1,23 +1,25 @@
 module.exports = {
-    "name": "Siamese Thai Spa",
-    "email": "ratsilaart@gmail.com",
-    "phoneForTel": "+441617185159",
-    "phoneFormatted": "0161 718 5159",
-    "openingHours": "Mon-Sun: 10am-10pm",
-    "onlineBooking": "https://siameasethaispa.setmore.com/",
+    "name": "Hua Hin Moon Thai Massage",
+    "email": "huahinmoonthaimassage@gmail.com",
+    "phoneForTel": "+1915102067",
+    "phoneFormatted": "0191 510 2067",
+    "openingHours": "Mon-Sat: 11am-8pm, Sun: 11am-6pm",
+    "onlineBooking": "https://huahinmoonthaimassage.setmore.com/",
     "address": {
-        "lineOne": "48 Faulkner St",
-        "lineTwo": "Ground Floor",
-        "city": "Manchester",
+        "lineOne": "16A Borough Rd",
+        "lineTwo": "Sunniside",
+        "city": "Sunderland",
         "state": "",
-        "zip": "M1 4FH",
+        "zip": "SR1 1EQ",
         "country": "United Kingdom",
-        "mapLink": "https://maps.app.goo.gl/NJoHPRmbEmuJoECcA"
+        "mapLink": "https://maps.app.goo.gl/Z9rGongCpY2aM5yq7"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/SiameaseThaiSPA/?locale=en_GB",
-        "googleReview": "https://g.page/r/CSXcBC0jVfyAEBM/review",
+        "facebook": "",
+        "googleReview": "https://g.page/r/Ce8-snjkpTxkEBM/review",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.siamease.co.uk"
+    "domain": "https://huahinmoonmassage.co.uk"
 };
+
+

@@ -1,23 +1,22 @@
-/*-- ---------------------------------------------------------------- -->
-<---                         Service Tiles                            -->
-<--- ---------------------------------------------------------------- -*/
+/*-- -------------------------- -->
+<---           Table            -->
+<--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-877 {
+  #table-1669 {
     padding: var(--sectionPadding);
   }
-  #services-877 .cs-container {
+  #table-1669 .cs-container {
     width: 100%;
-    /* changes to 1280px at Tablet */
-    max-width: 49rem;
+    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-877 .cs-content {
+  #table-1669 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -26,137 +25,79 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #services-877 .cs-title {
-    /* max width of 22 characters, includes spaces between words */
-    max-width: 39ch;
-  }
-  #services-877 .cs-text {
-    max-width: 66.5rem;
-  }
-  #services-877 .cs-card-group {
+  #table-1669 .cs-table {
     width: 100%;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    border-collapse: collapse;
   }
-  #services-877 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    max-width: 31.25rem;
-    border-radius: 1rem;
-    background-color: #fff;
-    overflow: hidden;
-    grid-column: span 3;
-    position: relative;
-    z-index: 1;
-    transition: box-shadow 0.3s, transform 0.3s;
-  }
-  #services-877 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transform: translateY(-0.4375rem);
-  }
-  #services-877 .cs-item:hover .cs-picture img {
-    opacity: 0.3;
-    transform: scale(1.1);
-  }
-  #services-877 .cs-item:hover .cs-h3 {
-    color: var(--secondary);
-  }
-  #services-877 .cs-item:before {
-    /* border, done in pseudo so it can sit under the picture */
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    border: 1px solid #e8e8e8;
-    /* prevents border from affecting height and width */
+  #table-1669 .cs-th {
+    padding: 0.75rem 1rem;
     box-sizing: border-box;
-    background: transparent;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
+  }
+  #table-1669 .cs-td {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
+  #table-1669 .cs-th,
+  #table-1669 .cs-td {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  #table-1669 .cs-color .cs-th:first-child {
+    color: #fff;
+    background-color: var(--primary);
+  }
+  #table-1669 .cs-th:first-child,
+  #table-1669 .cs-td:first-child {
+    position: sticky;
     left: 0;
-    z-index: -1;
+    z-index: 100;
+    /* Make sure it sits above the other cells */
+    background-color: var(--sectionColor);
+    border: 1px solid #ddd;
+    text-align: left;
   }
-  #services-877 .cs-link {
-    text-decoration: none;
-    padding: 0 0 1.25rem 0;
-    display: block;
+  #table-1669 .cs-th {
+    background-color: var(--sectionColor);
   }
-  #services-877 .cs-picture {
-    width: 100%;
-    height: 12.5rem;
-    margin-bottom: 1.25rem;
-    background-color: var(--secondary);
-    /* clips the img tag corners */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    z-index: 10;
-  }
-  #services-877 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #services-877 .cs-h3 {
-    font-size: 1.25rem;
-    text-align: inherit;
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--headerColor);
-    margin: 0 0 0.75rem 0;
-    /* 16px - 24px */
-    padding: 0 clamp(1rem, 2vw, 1.5rem);
-    transition: color 0.3s;
-  }
-  #services-877 .cs-item-text {
-    /* 14px - 16px  */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    text-align: inherit;
-    line-height: 1.5em;
+  #table-1669 .cs-tr {
     color: var(--bodyTextColor);
-    margin: 0;
-    padding: 0 1.25rem;
+  }
+  #table-1669 .cs-icon {
+    height: 1rem;
+    width: auto;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-877 .cs-container {
-    max-width: 80rem;
-  }
-  #services-877 .cs-item {
-    grid-column: span 1;
-    max-width: 28.875rem;
+/* Tablet - 600px */
+@media screen and (max-width: 37.5rem) {
+  #table-1669 .cs-table {
+    display: block;
+    overflow-x: auto;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-877 .cs-topper {
-    color: var(--secondary);
-  }
-  body.dark-mode #services-877 .cs-title,
-  body.dark-mode #services-877 .cs-text,
-  body.dark-mode #services-877 .cs-h3,
-  body.dark-mode #services-877 .cs-item-text {
+  body.dark-mode #table-1669 .cs-th {
+    background-color: rgba(0, 0, 0, 0.6);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-877 .cs-text,
-  body.dark-mode #services-877 .cs-item-text {
-    opacity: 0.8;
+  body.dark-mode #table-1669 .cs-th:first-child,
+  body.dark-mode #table-1669 .cs-td:first-child {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-877 .cs-item {
-    background-color: var(--medium);
+  body.dark-mode #table-1669 .cs-th,
+  body.dark-mode #table-1669 .cs-td {
+    border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #services-877 .cs-item:before {
-    opacity: 0.3;
+  body.dark-mode #table-1669 .cs-color .cs-th:first-child {
+    color: #fff;
+    background-color: var(--secondary);
+  }
+  body.dark-mode #table-1669 .cs-tr {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #table-1669 .cs-icon {
+    filter: grayscale(1) brightness(1000%);
   }
 }
