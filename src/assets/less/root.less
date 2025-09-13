@@ -7,8 +7,8 @@
     // Website colors
     :root {
         --primary: #932C87;
-        --primaryLight: #6c9549;
-        --secondary: #6c9549;
+        --primaryLight: #F3CD77;
+        --secondary: #F3CD77;
         --secondaryLight: #001f3f;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -1255,7 +1255,7 @@
             }
 
             &.cs-active {
-                color: var(--secondary);
+                color: var(--primary);
             }
         }
 
@@ -1492,19 +1492,7 @@
         background-color: #1a1a1a;
         position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 20px;
-            background-image: url('/assets/svgs/pattern-t.svg');
-            background-repeat: repeat-x;
-            background-size: auto 100%;
-            z-index: 2;
-            pointer-events: none;
-        }
+        
 
         .cs-wave {
             width: 100%;
