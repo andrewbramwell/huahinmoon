@@ -132,7 +132,7 @@
   h6 {
     margin: 0;
     color: var(--headerColor);
-    font-family: "playfair display", Arial, sans-serif;
+    font-family: "Syne", Arial, sans-serif;
   }
   p,
   li,
@@ -176,24 +176,24 @@
     src: url('/assets/fonts/cabin-v34-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* playfair-display-regular - latin */
+  /* syne-regular - latin */
   @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
+    font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/playfair-display-v39-latin-regular.woff2') format('woff2');
+    src: url('/assets/fonts/syne-v23-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* playfair-display-600 - latin */
+  /* syne-700 - latin */
   @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
+    font-family: 'Syne';
     font-style: normal;
-    font-weight: 600;
-    src: url('/assets/fonts/playfair-display-v39-latin-600.woff2') format('woff2');
+    font-weight: 700;
+    src: url('/assets/fonts/syne-v23-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 }
@@ -1031,7 +1031,7 @@
     margin: 0;
     color: #1a1a1a;
     position: relative;
-    font-family: "playfair display", Arial, sans-serif;
+    font-family: "Syne", Arial, sans-serif;
   }
   #banner-1519 .cs-breadcrumbs {
     display: flex;
@@ -1347,6 +1347,7 @@
     color: var(--bodyTextColorWhite);
     display: block;
     position: relative;
+    font-family: "Syne", Arial, sans-serif;
   }
   #cs-footer-842 .cs-ul {
     margin: 0;
@@ -1429,6 +1430,8 @@
     color: #fff;
     display: inline-block;
     position: relative;
+    font-family: "Syne", Arial, sans-serif;
+    font-weight: 700;
   }
   #cs-footer-842 .cs-credit-link:hover {
     color: var(--secondary);
