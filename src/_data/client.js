@@ -1,8 +1,10 @@
 module.exports = {
     "name": "Hua Hin Moon Thai Massage",
     "email": "huahinmoonthaimassage@gmail.com",
-    "phoneForTel": "+1915102067",
+    "phoneForTel": "+441915102067",
     "phoneFormatted": "0191 510 2067",
+    "mobileForTel": "+447796273858",
+    "mobileFormatted": "07796 273858",
     "openingHours": "Mon-Sat: 11am-8pm, Sun: 11am-6pm",
     "onlineBooking": "https://huahinmoonthaimassage.setmore.com/",
     "address": {
