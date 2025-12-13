@@ -17,7 +17,7 @@ module.exports = {
         "mapLink": "https://maps.app.goo.gl/Z9rGongCpY2aM5yq7"
     },
     "socials": {
-        "facebook": "",
+        "facebook": "https://www.facebook.com/huahinmoon/?locale=en_GB",
         "googleReview": "https://g.page/r/Ce8-snjkpTxkEBM/review",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
